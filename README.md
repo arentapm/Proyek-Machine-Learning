@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📘 Judul Proyek
 Klasifikasi Agama Suatu Negara Berdasarkan Karakteristik Bendera Menggunakan Machine Learning dan Deep Learning
 
@@ -19,14 +18,14 @@ Klasifikasi Agama Suatu Negara Berdasarkan Karakteristik Bendera Menggunakan Mac
 
 # 2. 📄 Problem & Goals
 **Problem Statements:**  
-- [1.	Dataset Flags memiliki karakteristik multivariat yang terdiri dari fitur numerik, kategorikal, dan biner, sehingga diperlukan metode preprocessing agar data dapat digunakan dengan baik untuk proses klasifikasi.]  
-- [2.	Hubungan antara krakteristik visual bendera dan agama dominan suatu negara tidak bersifat langsung, sehingga dibutuhkan model machine learning yang mampu mengenali pola dari kombinasi fitur fitur tersebut.]  
-- [3.	Ukuran dataset yang kecil relatif berpotensi menyebabkan model mengalami overfitting, sehingga perlu dilakukan pemilihan algoritma dan evaluasi model yang sesuai.]  
+- 1.	Dataset Flags memiliki karakteristik multivariat yang terdiri dari fitur numerik, kategorikal, dan biner, sehingga diperlukan metode preprocessing agar data dapat digunakan dengan baik untuk proses klasifikasi. 
+- 2.	Hubungan antara krakteristik visual bendera dan agama dominan suatu negara tidak bersifat langsung, sehingga dibutuhkan model machine learning yang mampu mengenali pola dari kombinasi fitur fitur tersebut.  
+- 3.	Ukuran dataset yang kecil relatif berpotensi menyebabkan model mengalami overfitting, sehingga perlu dilakukan pemilihan algoritma dan evaluasi model yang sesuai.  
 
 **Goals:**  
-- [1. Membangun model machine learning untuk mengklasifikasikan agama dominan suatu negara berdasarkan karakteristik bendera menggunakan dataset Flags.]  
-- [2.	Mengevaluasi kinerja model klasifikasi menggunakan metrik evaluasi seperti akurasi, precision, recall, dan confusion matrix.] 
-- [3.	Menentukan model klasifikasi yang memberikan performa terbaik dan stabil pada datset yang digunakan.] 
+- 1. Membangun model machine learning untuk mengklasifikasikan agama dominan suatu negara berdasarkan karakteristik bendera menggunakan dataset Flags.
+- 2.	Mengevaluasi kinerja model klasifikasi menggunakan metrik evaluasi seperti akurasi, precision, recall, dan confusion matrix.
+- 3.	Menentukan model klasifikasi yang memberikan performa terbaik dan stabil pada datset yang digunakan.
  
 ---
 ## 📁 Struktur Folder
@@ -67,9 +66,9 @@ project/
 ---
 
 # 3. 📊 Dataset
-- **Sumber:** [UCI Machine Learning Repository]  
-- **Jumlah Data:** [194]  
-- **Tipe:** [Classification]  
+- **Sumber:** UCI Machine Learning Repository
+- **Jumlah Data:** 194  
+- **Tipe:** Tabular (numerik, kategorikal, dan biner) 
 
 ### Fitur Utama
 | Nama Fitur | Deskripsi |
@@ -114,9 +113,9 @@ project/
 ---
 
 # 5. 🤖 Modeling
-- **Model 1 – Baseline:** [Naive Bayes]  
-- **Model 2 – Advanced ML:** [Random Forest]  
-- **Model 3 – Deep Learning:** [Multi Layer Perceptron (MLP)]  
+- **Model 1 – Baseline:** Naive Bayes 
+- **Model 2 – Advanced ML:** Random Forest  
+- **Model 3 – Deep Learning:** Multi Layer Perceptron (MLP)
 
 ---
 
@@ -133,21 +132,23 @@ project/
 ---
 
 # 7. 🏁 Kesimpulan
-- Model terbaik: [Random Forest (Advanced/ML)]  
-- Alasan: [•	Random Forest memberikan keseimbangan terbaik antara performa, stabilitas, dan efisiensi traing dibandingkan model lain.
-•	Performanya unggul dibanding Naive Bayes (baseline) dan MLP (deep learning) untuk dataset Flags, Akurasi test set 64,10% (lebih tinggi daripada Naive Bayes 30,77% dan MLP 53,85%) dan F1-Score: 0.3847, lebih baik dari baseline dan MLP
-•	Mampu menangkap hubungan non-linier antar fitur numerik dan kategorikal yang sulit ditangani Naive bayes.
-•	Tidak mengalami overfitting berlebihan seperti MLP, sehingga performa test set relatif stabil
-]  
-- Insight penting: [1.	Model Random Forest lebih efektif menangkap pola non-linear. Performanya lebih baik dibanding Naive Bayes dan MLP karena mampu memanfaatkan interaksi antar fitur numerik dan kategorikal.
+- Model terbaik: Random Forest (Advanced/ML)
+- Alasan: 
+1.	Random Forest memberikan keseimbangan terbaik antara performa, stabilitas, dan efisiensi traing dibandingkan model lain.
+2.   Performanya unggul dibanding Naive Bayes (baseline) dan MLP (deep learning) untuk dataset Flags, Akurasi test set 64,10% (lebih tinggi daripada Naive Bayes 30,77% dan MLP 53,85%) dan F1-Score: 0.3847, lebih baik dari baseline dan MLP
+3.   Mampu menangkap hubungan non-linier antar fitur numerik dan kategorikal yang sulit ditangani Naive bayes.
+4.   Tidak mengalami overfitting berlebihan seperti MLP, sehingga performa test set relatif stabil
+  
+- Insight penting: 
+1.	Model Random Forest lebih efektif menangkap pola non-linear. Performanya lebih baik dibanding Naive Bayes dan MLP karena mampu memanfaatkan interaksi antar fitur numerik dan kategorikal.
 2.	Deep Learning (MLP) mengalami overfitting meskipun dataset relatif kecil. Train accuracy tinggi (>70%) tetapi validation accuracy stabil di 50–60%. Ini menunjukkan MLP terlalu kompleks untuk dataset tabular kecil seperti Flags.
-]  
+  
 
 ---
 
 # 8. 🔮 Future Work
-- [Data: Dataset Flags yang digunakan relatif kecil (194 sampel), sehingga model—terutama deep learning—belum dapat belajar pola secara optimal. Pengumpulan data tambahan, baik dari sumber lain maupun perluasan atribut bendera, dapat meningkatkan generalisasi model dan mengurangi risiko overfitting.]    
-- [Tuning model :Pengembangan model dapat dilakukan dengan feature engineering lanjutan untuk memperkaya informasi fitur, hyperparameter tuning yang lebih menyeluruh agar performa optimal, serta mencoba arsitektur deep learning yang lebih kompleks. Selain itu, penggunaan ensemble methods dengan menggabungkan beberapa model berpotensi meningkatkan akurasi dan stabilitas prediksi. ]   
+- Data: Dataset Flags yang digunakan relatif kecil (194 sampel), sehingga model—terutama deep learning—belum dapat belajar pola secara optimal. Pengumpulan data tambahan, baik dari sumber lain maupun perluasan atribut bendera, dapat meningkatkan generalisasi model dan mengurangi risiko overfitting.  
+- Tuning model :Pengembangan model dapat dilakukan dengan feature engineering lanjutan untuk memperkaya informasi fitur, hyperparameter tuning yang lebih menyeluruh agar performa optimal, serta mencoba arsitektur deep learning yang lebih kompleks. Selain itu, penggunaan ensemble methods dengan menggabungkan beberapa model berpotensi meningkatkan akurasi dan stabilitas prediksi.   
  
 
 ---
@@ -163,6 +164,3 @@ scikit-learn	: 1.6.1
 tensorflow 	    : 2.19.0
 keras      	    : 3.10.0
 
-=======
-# Proyek-Machine-Learning
->>>>>>> 821455cf9cd03a43359368bfd74ba8b62c174d66
