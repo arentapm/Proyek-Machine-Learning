@@ -147,7 +147,7 @@ project/
 ---
 
 # 8. 🔮 Future Work
-- Data: Dataset Flags yang digunakan relatif kecil (194 sampel), sehingga model—terutama deep learning—belum dapat belajar pola secara optimal. Pengumpulan data tambahan, baik dari sumber lain maupun perluasan atribut bendera, dapat meningkatkan generalisasi model dan mengurangi risiko overfitting.  
+- Data: Dataset Flags yang digunakan relatif kecil (194 sampel), sehingga model terutama deep learning belum dapat belajar pola secara optimal. Pengumpulan data tambahan, baik dari sumber lain maupun perluasan atribut bendera, dapat meningkatkan generalisasi model dan mengurangi risiko overfitting.  
 - Tuning model :Pengembangan model dapat dilakukan dengan feature engineering lanjutan untuk memperkaya informasi fitur, hyperparameter tuning yang lebih menyeluruh agar performa optimal, serta mencoba arsitektur deep learning yang lebih kompleks. Selain itu, penggunaan ensemble methods dengan menggabungkan beberapa model berpotensi meningkatkan akurasi dan stabilitas prediksi.   
  
 
